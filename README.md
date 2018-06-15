@@ -29,7 +29,14 @@ like this:
 ![state 2](https://trottski.s3.amazonaws.com/snaps/stage2.jpg)
 
 ## Notes
+
 Please do not publicly fork this repository, if you submit via github (prefered) please downlaod the zip and init your own repo, this is so that other people can't copy your work.
 Feel free to overwrite this section of the readme with anything you think we should know about your solution.
 
 Good luck!
+
+## Added
+
+I have added a game over screen and a move counter in addition to the base specifications. You will find a `this.gameOver` value initialized to false in the constructor and `this.moveCounter` value set to 0. After each move `this.moveCounter` is incremented and the function `checkEmptyBoard` is run to check if `this.gameOver` should be set to true.
+
+if `this.gameOver` is set to true the class `render` function shows a screen informing the user of the amount of moves they took and a button that lets them restart the game.
